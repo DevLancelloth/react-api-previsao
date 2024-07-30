@@ -24,8 +24,8 @@ Siga os passos abaixo para instalar e rodar a aplicação localmente:
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/DevLancelloth/react-api-previsao.git
+   cd react-api-previsao
    ```
 
 2. **Instale as dependências:**
