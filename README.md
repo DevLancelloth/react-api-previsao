@@ -1,7 +1,3 @@
-Claro, Gabriel! Vamos criar um README para documentar a sua aplicação de previsão do tempo. Vou incluir uma explicação detalhada sobre o propósito da aplicação, as dependências necessárias, instruções de instalação, como rodar a aplicação, e um resumo do código.
-
----
-
 # Previsão do Tempo - Aplicação React
 
 ## Descrição
@@ -129,7 +125,3 @@ Contribuições são bem-vindas! Se você tiver sugestões, encontrar bugs ou qu
 ## Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-Espero que isso ajude a documentar sua aplicação! Se precisar de mais alguma coisa, é só avisar.
