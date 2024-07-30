@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <h1>DevClub - Previsão do Tempo</h1>
+      <h1>API - Previsão do tempo</h1>
       <input ref={inputRef} type="text" placeholder="digite o nome da cidade" />
       <button onClick={ProcurarCidade}>Buscar</button>
 
