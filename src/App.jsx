@@ -1,9 +1,11 @@
-import { useState, useRef } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState, useRef } from "react";
 import axios from "axios";
-import WeatherInformations from "./components/WheaterInformations/WeatherInformations";
+import WeatherInformations from "./components/WeatherInformations/WeatherInformations";
+import "./App.css";
 
 function App() {
-  const [weather, setWeather] = useState({ weather: {} });
+  const [weather, setWeather] = useState({});
   const inputRef = useRef();
 
   async function ProcurarCidade() {
@@ -16,12 +18,14 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>API - Previsão do tempo</h1>
       <input ref={inputRef} type="text" placeholder="digite o nome da cidade" />
       <button onClick={ProcurarCidade}>Buscar</button>
 
-      <WeatherInformations weather={weather} />
+      {Object.keys(weather).length > 0 && (
+        <WeatherInformations weather={weather} />
+      )}
     </div>
   );
 }
