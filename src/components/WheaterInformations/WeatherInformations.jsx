@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import PropTypes from "prop-types";
-import "./WeatherInformations.css";
 
 function WeatherInformations({ weather }) {
   console.log(weather); // Verifica o conteúdo do objeto weather no console
@@ -30,7 +29,7 @@ function WeatherInformations({ weather }) {
       : "N/A";
 
   return (
-    <div className="card">
+    <div>
       <h2>Meu Componente</h2>
       <p>O nome da cidade é {cityName}</p>
       <img
