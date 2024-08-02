@@ -6,22 +6,31 @@ import WeatherInformations5Days from "./components/WeatherInformations5Days/Weat
 
 import "./App.css";
 
+// Componente principal da aplicação
 function App() {
+  // Estado para armazenar as informações meteorológicas atuais
   const [weather, setWeather] = useState({});
+  // Estado para armazenar as informações meteorológicas dos próximos 5 dias
   const [weather5Days, setWeather5Days] = useState({});
+  // Referência para o input de texto
   const inputRef = useRef();
 
+  // Função assíncrona para buscar as informações meteorológicas da cidade
   async function ProcurarCidade() {
     const cidade = inputRef.current.value;
     const chave = "f4d1e55620c157eccbb0a5df711f2c98";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chave}&lang=pt_br&units=metric`;
     const url5Days = `http://api.openweathermap.org/data/2.5/forecast?q=${cidade}&appid=${chave}&lang=pt_br&units=metric&cnt=30`;
 
+    // Faz a requisição para a API de previsão de 5 dias
     const apiInfo5Days = await axios.get(url5Days);
+    // Faz a requisição para a API de previsão atual
     const apiInfo = await axios.get(url);
 
     console.log(apiInfo5Days.data);
+    // Atualiza o estado com as informações de previsão de 5 dias
     setWeather5Days(apiInfo5Days.data);
+    // Atualiza o estado com as informações de previsão atual
     setWeather(apiInfo.data);
   }
 

@@ -4,9 +4,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./WeatherInformations5Days.css";
 
+// Componente funcional para exibir a previsão do tempo para os próximos 5 dias
 function WeatherInformations5Days({ weather5Days }) {
   let dailyForecasts = {};
 
+  // Itera sobre a lista de previsões e agrupa por data
   for (let forecast of weather5Days.list) {
     const date = new Date(forecast.dt * 1000).toLocaleDateString("pt-BR", {
       weekday: "long",
@@ -18,6 +20,7 @@ function WeatherInformations5Days({ weather5Days }) {
     }
   }
 
+  // Cria os elementos JSX para cada previsão diária
   const forecasts = Object.keys(dailyForecasts)
     .slice(0, 5)
     .map((date) => {
