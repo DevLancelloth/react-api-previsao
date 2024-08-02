@@ -42,7 +42,7 @@ Siga os passos abaixo para instalar e rodar a aplicação localmente:
    npm run dev
    ```
 
-   A aplicação estará disponível em `http://localhost:5134`.
+   A aplicação estará disponível em `http://localhost:5174`.
 
 ## Utilização
 
