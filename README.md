@@ -39,10 +39,10 @@ Siga os passos abaixo para instalar e rodar a aplicação localmente:
 3. **Execute a aplicação:**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
-   A aplicação estará disponível em `http://localhost:3000`.
+   A aplicação estará disponível em `http://localhost:5134`.
 
 ## Utilização
 
